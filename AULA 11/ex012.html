@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfandega</title>
+<style> 
+       body{
+              background-image: url("https://images3.alphacoders.com/837/837671.jpg");
+              font: normal 12pt Arial;
+              color: rgb(255, 0, 43);
+       }
+</style>
+
+</head>
+<body>
+            
+
+        <h1> Sistema para descobrir seu pais</h1>
+        Digite a sua nacionalidade <input type="text" name="txtpais" id="txtpais"> 
+        <input type="button" value="verificar" onclick="calcular()">
+        <div id="res"></div>
+<script>
+             /***Condição Composta***/
+
+           function calcular(){
+            var txtp = document.querySelector('input#txtpais')
+            var res = document.querySelector('div#res')
+            var n1 = txtp.value;
+            res.innerHTML = ` <p>Sua nacionalidade é <strong>${n1} </strong> ! </p>`
+           
+           if(n1 == 'brasileiro' ){
+                res.innerHTML += ` Você nasceu no brasil!`
+            }
+            else{
+                res.innerHTML += ` Você é estrangeiro!`
+            }
+             
+            
+           }
+
+
+</script>
+
+</body>
+</html>

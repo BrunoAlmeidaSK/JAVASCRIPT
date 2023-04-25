@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero ao quadrado</title>
+</head>
+  <style>
+    body{   
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font: normal 15pt Arial;
+    }
+
+  </style>
+
+<body>
+     <h1> Transformando numero ao quadrado</h1>
+     Digite os numeros : <p><input type="number" name="txtn1" id="txtn1">
+     <p><input type="number" name="txtn2" id="txtn2"></p>
+     <p><input type="number" name="txtn3" id="txtn3"></p>
+     <p><input type="number" name="txtn4" id="txtn4"></p>
+     <p><input type="number" name="txtn5" id="txtn5"></p>
+     <p><input type="button" value="verificar" onclick="somar()"></p>
+     <div id="res"></div>
+
+     <script>
+            function somar(){
+            var n1 = document.querySelector('input#txtn1')
+            var n2 = document.querySelector('input#txtn2')
+            var n3 = document.querySelector('input#txtn3')
+            var n4 = document.querySelector('input#txtn4')
+            var n5 = document.querySelector('input#txtn5')
+
+            var res = document.getElementById('res')
+
+            var quad1 = Number(n1.value)
+            var quad2 = Number(n2.value)
+            var quad3 = Number(n3.value)
+            var quad4 = Number(n4.value)
+            var quad5 = Number(n5.value)
+            
+            var s1 = (quad1 * quad1 )
+            var s2 = (quad2 * quad2 )
+            var s3 = (quad3  * quad3 )
+            var s4 = (quad4  * quad4 )
+            var s5 = (quad5  * quad5 )
+             
+
+            res.innerHTML = `O quadro dos numeros: <p>${quad1} é: ${s1}</p>  <p>${quad2} é: ${s2} </p> <p>${quad3} é: ${s3}</p> <p>${quad4} é: ${s4}</p> <p>${quad5} é: ${s5}</p> `
+            
+
+
+            }
+
+     </script>
+
+
+</body>
+</html>

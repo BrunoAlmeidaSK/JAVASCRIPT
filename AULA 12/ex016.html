@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular  media </title>
+</head>
+<body>
+    <h1> CALCULO DA MEDIA </h1>
+    Digite os valores <input type="number" name="txtmed" id="txtmed">
+   <p> Digite os valores <input type="number" name="txtmed1" id="txtmed1"> </p>
+   <p> Digite os valores <input type="number" name="txtmed2" id="txtmed2"> </p>
+   <p> Digite os valores <input type="number" name="txtmed3" id="txtmed3"> </p>
+    <input type="button" value="verificar" onclick="calcular()">
+   <div id="res"></div>
+    
+   <script>
+        function calcular(){
+            var med = document.querySelector('input#txtmed')
+            var med1 = document.querySelector('input#txtmed1')
+            var med2 = document.querySelector('input#txtmed2')
+            var med3 = document.querySelector('input#txtmed3')
+            var res = document.getElementById('res')
+
+            var n1 = Number(med.value)
+            var n2 = Number(med1.value)
+            var n3 = Number(med2.value)
+            var n4 = Number(med3.value)
+            
+             //var s = (n1 + n2 + n3 + n4) / 4
+            
+
+             res.innerHTML = `O resultado da sua media é ${s} !  `
+
+        }
+
+
+   </script>
+    
+</body>
+</html>

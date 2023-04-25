@@ -1,0 +1,30 @@
+body{
+    background: rgba(12, 12, 207, 0.719);
+    font: normal 15pt Arial;
+   
+}
+
+header{
+   color: azure;
+   text-align: center; /*Centralizar na tela*/
+}
+
+section{
+     background:  aliceblue;
+     border-radius: 10px; /*deixa as bordas arredondadas*/
+     padding: 15px;       /*Da uma espaçada dentro do radio*/
+     width: 500px;        /*Largura fixa*/
+     margin: auto;        /*Centralizar automatico na tela*/
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.692); /*faz uma sombra*/
+
+}
+
+select#flista{
+    width: 150px ;
+}
+
+footer{
+    color: azure;
+    text-align: center; /*Centralizar automatico na tela*/
+    font: italic;
+}
